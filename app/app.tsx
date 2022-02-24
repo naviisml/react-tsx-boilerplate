@@ -1,21 +1,22 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-
+import { render } from "react-dom"
+import { BrowserRouter } from "react-router-dom"
 import { IntlProvider } from 'react-intl'
 
+// import the App container
 import App from './containers/App/App'
 
+// import utilities
 import './utils'
 
-const MOUNT_NODE = document.getElementById('app')
+// define the root element
+const rootElement = document.getElementById("app")
 
-const render = messages => {
-	ReactDOM.render(
-		<IntlProvider locale="en">
+// render the application
+render(
+	<IntlProvider locale="en">
+		<BrowserRouter>
 			<App />
-		</IntlProvider>,
-		MOUNT_NODE,
-	);
-}
-
-render({})
+		</BrowserRouter>
+	</IntlProvider>,
+	rootElement
+)

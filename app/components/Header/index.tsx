@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import { FormattedMessage } from 'react-intl'
 
 import Container from '/app/components/Container'
@@ -9,14 +10,10 @@ function Footer() {
 			<div className="container d-flex flex-row">
 				<ul className="nav-list">
 					<li className="nav-item">
-						<a className="nav-link" href="/">
-							Home
-						</a>
+						<Link className="nav-link" to="/">Home</Link>
 					</li>
 					<li className="nav-item">
-						<a className="nav-link" href="#">
-							Example
-						</a>
+						<Link className="nav-link" to="/test">Test</Link>
 					</li>
 				</ul>
 

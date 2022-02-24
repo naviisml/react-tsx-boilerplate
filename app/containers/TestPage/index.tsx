@@ -14,7 +14,7 @@ import Container from '/app/components/Container'
 export default function App() {
 	return (
 		<Container>
-			Home
+			Test
 		</Container>
 	)
 }
