@@ -10,12 +10,12 @@ import React from 'react'
 import styled from 'styled-components'
 import { Routes, Route } from 'react-router-dom'
 
-import HomePage from '/app/containers/HomePage'
-import TestPage from '/app/containers/TestPage'
-import Header from '/app/components/Header'
-import Footer from '/app/components/Footer'
+import HomePage from '/src/containers/HomePage'
+import TestPage from '/src/containers/TestPage'
+import Header from '/src/components/Header'
+import Footer from '/src/components/Footer'
 
-import GlobalStyle from '/app/global-styles'
+import GlobalStyle from '/src/global-styles'
 
 const AppWrapper = styled.div``
 

@@ -9,7 +9,7 @@ import App from './containers/App/App'
 import './utils'
 
 // define the root element
-const rootElement = document.getElementById("app")
+const rootElement = document.querySelector(".wrapper")
 
 // render the application
 render(
