@@ -9,6 +9,7 @@ This boilerplate contains the basic features needed to start on a fresh react si
 - ~~Layouts~~
 - ~~Languages~~
 - ~~Store~~
+- ~~React Native~~
 
 ## Installation
 
