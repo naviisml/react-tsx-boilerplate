@@ -1,10 +1,7 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
-const Wrapper = styled.footer`
+const Wrapper = styled.header`
 	display: flex;
-	justify-content: space-between;
-	padding: 3em 0;
-	border-top: 1px solid #666;
-`;
+`
 
-export default Wrapper;
+export default Wrapper

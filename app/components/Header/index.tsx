@@ -1,26 +1,38 @@
-import React from 'react';
-import { FormattedMessage } from 'react-intl';
+import React from 'react'
+import { FormattedMessage } from 'react-intl'
 
-import A from '/app/components/A';
-import Wrapper from './Wrapper';
-import messages from './messages';
+import Container from '/app/components/Container'
 
 function Footer() {
 	return (
-		<Wrapper>
-			<section>
-				<FormattedMessage {...messages.licenseMessage} />
-			</section>
-			<section>
-				<FormattedMessage
-				{...messages.authorMessage}
-				values={{
-				author: <A href="https://twitter.com/mxstbr">Max Stoiber</A>,
-				}}
-				/>
-			</section>
-		</Wrapper>
-	);
+		<nav className="nav-top py-1">
+			<div className="container d-flex flex-row">
+				<ul className="nav-list">
+					<li className="nav-item">
+						<a className="nav-link" href="/">
+							Home
+						</a>
+					</li>
+					<li className="nav-item">
+						<a className="nav-link" href="#">
+							Example
+						</a>
+					</li>
+				</ul>
+
+				<ul className="nav-list ml-auto">
+					<li className="nav-item">
+						<a className="nav-link" href="#">
+							Sign Up
+						</a>
+					</li>
+					<li className="nav-button">
+						<button className="btn btn-primary">Login</button>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	)
 }
 
-export default Footer;
+export default Footer

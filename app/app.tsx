@@ -1,11 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import { IntlProvider } from 'react-intl';
+import { IntlProvider } from 'react-intl'
 
 import App from './containers/App/App'
 
-const MOUNT_NODE = document.getElementById('app');
+import './utils'
+
+const MOUNT_NODE = document.getElementById('app')
 
 const render = messages => {
 	ReactDOM.render(
@@ -14,6 +16,6 @@ const render = messages => {
 		</IntlProvider>,
 		MOUNT_NODE,
 	);
-};
+}
 
-render({});
+render({})

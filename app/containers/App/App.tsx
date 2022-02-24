@@ -6,23 +6,16 @@
  * contain code that should be seen on all pages. (e.g. navigation bar)
  */
 
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
-import HomePage from '/app/containers/HomePage';
-import Header from '/app/components/Header';
-import Footer from '/app/components/Footer';
+import HomePage from '/app/containers/HomePage'
+import Header from '/app/components/Header'
+import Footer from '/app/components/Footer'
 
-import GlobalStyle from '/app/global-styles';
+import GlobalStyle from '/app/global-styles'
 
-const AppWrapper = styled.div`
-	max-width: calc(768px + 16px * 2);
-	margin: 0 auto;
-	display: flex;
-	min-height: 100%;
-	padding: 0 16px;
-	flex-direction: column;
-`;
+const AppWrapper = styled.div``
 
 export default function App() {
 	return (
@@ -32,5 +25,5 @@ export default function App() {
 			<Footer />
 			<GlobalStyle />
 		</AppWrapper>
-	);
+	)
 }

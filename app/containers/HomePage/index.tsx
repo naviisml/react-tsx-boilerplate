@@ -6,12 +6,16 @@
  * contain code that should be seen on all pages. (e.g. navigation bar)
  */
 
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
+
+import Container from '/app/components/Container'
 
 export default function App() {
 	return (
-		`Cutie!`
-	);
+		<Container>
+			Cutie!
+		</Container>
+	)
 }
  
